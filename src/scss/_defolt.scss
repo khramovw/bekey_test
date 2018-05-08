@@ -1,0 +1,130 @@
+/* defolt classes */
+.bg-form{
+    background-color: $bgFormColor;
+}
+.bg-logo{
+    background-color: $bgLogoColor;
+}
+.sidebar-box{
+    height: fit-content;
+}
+.block-form h6{
+    color: $linkColor;
+}
+.btn-form{
+    border-radius: 20px;
+    padding: .5rem 19%;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,.4);
+    color: #ffffff;
+    margin-bottom: 12px;
+    width: 100%;
+}
+.form-control{
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+    padding: 0;
+    border-radius: 0;
+    color: $linkColor;
+    &:active, &:focus{
+        background-color: transparent;
+        outline: none !important;
+        outline: 0;
+        box-shadow: none;
+        border-color: transparent;
+        border-bottom: 1px solid rgba(255,255,255,.4);
+        color: $linkColor;
+    }
+}
+.title-content{
+    color: $accentColor;
+    height: 10rem;
+}
+.item-box {
+    color: $accentColor;
+    p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        margin-top: 2rem;
+        height: 144px;
+        font-weight: 400;
+    }
+}
+/* player */
+.gift{
+    position: absolute;
+    z-index: 999;
+    width: 4rem;
+    padding: 12px;
+    left: 50%;
+    border-radius: 50%;
+    border: 4px solid $linkColor;
+
+    &:hover{
+        cursor: pointer;
+    }
+    img{
+        width: 100%;
+    }
+}
+.gift-info-box{
+    position: absolute;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .3);
+    .gift{
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-color:  rgba(255, 255, 255, 0);
+        background-color:  rgba(0, 0, 0, .3);;
+    }
+}
+.gift, .gift-info-box{
+    transition: all .5s linear;
+}
+.icon-close{
+    position: absolute;
+    z-index: 999;
+    top: 3%;
+    left: 8%;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    &:hover{
+        cursor: pointer;
+    }
+    span{
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        height: 24px;
+        background-color: #fafafa;
+        display: inline-block;
+        transform: rotate(45deg);
+        & + span{
+            transform: rotate(-45deg);
+        }
+    }
+}
+.gift-wrap{
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    height: 60%;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.player{
+    position: relative;
+    overflow: hidden;
+    video{
+        max-width: 100%;
+    }
+}
